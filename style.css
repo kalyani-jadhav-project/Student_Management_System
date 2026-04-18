@@ -1,0 +1,222 @@
+/* =========================
+   GLOBAL BACKGROUND
+   COLOR: Light Blue (#e3f2fd)
+========================= */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+
+    background: #e3f2fd; /* Light Blue Background */
+}
+
+/* =========================
+   LOGIN CENTER
+========================= */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e3f2fd; /* Light Blue */
+}
+
+/* =========================
+   LOGIN CARD
+   COLOR: White (#ffffff)
+========================= */
+.login-card {
+    background: #ffffff; /* White Card */
+    padding: 40px;
+    width: 350px;
+
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+/* =========================
+   ALL TITLES (LIGHT BLUE)
+   COLOR: Blue (#1976d2)
+========================= */
+h2 {
+    color: #1976d2; /* Blue Title */
+}
+
+/* Login title */
+.login-card h2 {
+    color: #1976d2; /* Blue */
+}
+
+/* =========================
+   INPUT FIELDS
+   COLOR: Border Gray (#ccc)
+========================= */
+.login-card input {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px;
+
+    background: #ffffff;
+}
+
+/* =========================
+   PRIMARY BUTTON
+   COLOR: Blue (#1976d2)
+========================= */
+.login-card button {
+    width: 100%;
+    padding: 12px;
+
+    background: #1976d2; /* Blue Button */
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #0d47a1; /* Dark Blue */
+}
+
+/* =========================
+   DASHBOARD CONTAINER
+   COLOR: White (#ffffff)
+========================= */
+.container {
+    background: #ffffff; /* White */
+    margin: 20px;
+    padding: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   TABLE HEADER
+   COLOR: Blue (#1976d2)
+========================= */
+th {
+    background: #1976d2; /* Blue header */
+    color: white;
+    padding: 12px;
+}
+
+/* =========================
+   TABLE CELLS
+   COLOR: Black text (#333)
+========================= */
+td {
+    padding: 12px;
+    text-align: center;
+    color: #333; /* Dark text */
+}
+
+/* Zebra rows */
+tr:nth-child(even) {
+    background: #f5f9ff; /* Light blue row */
+}
+
+/* Hover row */
+tr:hover {
+    background: #e3f2fd; /* Light blue hover */
+}
+
+/* =========================
+   GLOBAL BUTTON STYLE
+   COLOR: Blue (#1976d2)
+========================= */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    background: #1976d2; /* Blue */
+    color: white;
+}
+
+/* Hover */
+button:hover {
+    background: #1976d2; /* Dark Blue */
+}
+
+/* =========================
+   DELETE BUTTON
+   COLOR: Red (#e53935)
+========================= */
+button.delete {
+    background: #ff0080; /* Red */
+    color: white;
+}
+
+button.delete:hover {
+    background: #c62828; /* Dark Red */
+}
+
+/* =========================
+   STUDENT FORM GRID LAYOUT
+   3 COLUMNS DESIGN
+========================= */
+
+.container form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ⭐ 3 columns */
+    gap: 15px; /* spacing between fields */
+}
+
+/* =========================
+   INPUT BOX STYLE
+========================= */
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="date"],
+.container input[type="email"] {
+
+    width: 100%;
+    padding: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #cfd8dc;
+
+    font-size: 12px;
+    background: #f9fbff;
+
+    transition: 0.3s;
+}
+
+/* Focus effect */
+.container input:focus {
+    border: 1px solid #1976d2;
+    box-shadow: 0 0 8px rgba(25,118,210,0.2);
+    outline: none;
+}
+
+/* =========================
+   BUTTON FULL WIDTH
+========================= */
+.container button {
+    grid-column: span 3;  /* ⭐ button full width */
+    padding: 14px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background: #1976d2;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.container button:hover {
+    background: #0d47a1;
+}
